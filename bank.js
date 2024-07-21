@@ -32,7 +32,7 @@ function login(){
       if(customer.accnumber ==loginacno && customer.password == loginpassw){
         alert("Login successful")
         localStorage.setItem('logined', loginacno)
-        window.location='./index.html'
+        window.location='./transaction.html'
       }else{
         alert("Invalid Account Number or Password")
       }

@@ -47,3 +47,6 @@ function balance(){
     finalbalance.value=customer.balance;
     
 }
+function logout(){
+    window.location='./index.html'
+}

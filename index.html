@@ -3,149 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-           /* background: linear-gradient(180deg, #7a288a 0%, #454f55 50%, #333 100%); */
-
-            background-image:url('https://static.vecteezy.com/system/resources/previews/010/518/840/original/digital-finance-and-banking-service-in-futuristic-background-bank-building-with-online-payment-transaction-secure-money-and-financial-innovation-technology-vector.jpg');
-            background-size: 100% ;
+    <title>Home</title>
+</head>
+<style>
+    body{
+        background-image: url('https://www.civista.bank/assets/img/olb-background.png');
+        background-size: 100% ;
             background-position: center;
             background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-            /* height: 50vh; */
+            top: 0px;
+            padding: 0px;
+            margin: 0px;
+    }
+    .navimg img{
+        width: 50px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        width: 100%;
 
-            
-        }
+
+    }
+    .bankname{
+        position: relative;
+    }
+    .navlist{
+        position: relative;
+        margin-left: 1000px;
         
-        section{
-            display: flex;
-            
-            gap: 150px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            margin-top: 160px;
-            
-            
-        }
-        .div1, .div2{
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            padding: 5px;
-            border: solid;
-            border-radius: 15px;
-            /* background: transparent; */
-            background-color: white;
-            width: 400px;
-            height: 200px;
-            
-        }
-        label{
-            margin-left: 72px;
-        }
-        button{
-            margin-left: 120px;
-            padding: 5px;
-            width: 140px;
-            border: none;
-            background-color: green;
-            color: white;
+    }
+    .nav-btn {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 5px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 0 10px;
+}
 
-        }
-        @media only screen and (max-width: 768px) {
-    section {
+.nav-btn:hover {
+    background-color: #23527c;
+}
+
+    .online-banking {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.online-banking h2 {
+    color: #333;
+}
+
+.online-banking p {
+    margin-bottom: 20px;
+}
+
+.online-banking button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.online-banking button:hover {
+    background-color: #23527c;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.features h3 {
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.benefits {
+    margin-top: 20px;
+}
+
+.benefits h3 {
+    margin-bottom: 10px;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: none;
+    }
+    nav {
         flex-direction: column;
-        gap: 20px;
-        margin-top: 50px;
     }
-    .div1, .div2 {
-        width: 90%;
-        height: 150px;
-    }
-    label {
+    .navlist {
         margin-left: 0;
     }
-    button {
-        margin-left: 0;
-        padding: 3px;
-        width: 100px;
+    .nav-btn {
+        padding: 5px 10px;
+        font-size: 12px;
     }
-    .logout button {
-        margin-left: 0;
-        margin-top: 0;
+    .online-banking {
+        margin: 20px auto;
+        padding: 10px;
     }
-}
-@media only screen and (max-width: 480px) {
-    .div1, .div2 {
-        width: 80%;
-        height: 120px;
+    .online-banking img {
+        height: 200px;
     }
-    button {
-        padding: 2px;
-        width: 80px;
+    .features ul, .benefits ul {
+        padding-left: 20px;
     }
 }
 
-    </style>
-</head>
+  
+</style>
 <body>
-    <div class="logout">
-        <button onclick="logout()" style="background-color: red; margin-left: 1300px;margin-top: 5px;font-weight: bolder;">LOGOUT</button>
-    </div>
+    <nav>
+        <div class="navimg">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/348/687/original/bank-vector-icon.jpg" alt="">
+            
+        </div>
+        <div class="bankname">
+            <h3>BANK</h3>
+        </div>
+        <div class="navlist">
+            <a href="./index.html"><button class="nav-btn">HOME</button></a>
+            <a href="./register.html"><button class="nav-btn">REGISTER</button></a>
+        </div>
+    </nav>
     <section>
-        <div class="div1">
-            <h2>DEPOSIT</h2>
-            <table>
-                <tr>
-                    <td><label for="" >Amount</label></td>
-                    <td><input type="text" id="depamount"></td>
-
-                </tr>
-                <tr>
-                    <td colspan="2"> <button onclick="deposit()" style="background-color: blue;">Deposit</button></td>
-                </tr>
-                <tr>
-                   
-                </tr>
-            </table>
-        </div>
-        <div class="div2">
-            <h2>WITHDRAW</h2>
-            <table>
-                <tr>
-                    <td><label for="">Amount</label></td>
-                    <td><input type="text" id="withdrawamount" ></td>
-
-                </tr>
-                <tr>
-                    <td colspan="2"> <button onclick="withdraw()">Withdraw</button></td>
-                </tr>
-                <tr>
+        <div class="online-banking">
+            <h2>Experience the Power of Online Banking</h2>
+            <p>Manage your accounts, pay bills, transfer funds, and more with our secure and user-friendly online banking system.</p>
+            <img src="https://globebankonline.com/wp-content/uploads/2020/04/AdobeStock_205999626-2048x1150.jpeg" alt="Online Banking" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
+            <button onclick="window.location.href='./login.html'">Login to Online Banking</button>
+            <div class="features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>View account balances </li>
                     
-                </tr>
-            </table>
-        </div>
-        
-    </section>
-    <section style="margin-top: 50px;">
-        <div class="div2">
-            <h2>Balance Enquiry</h2>
-            <table>
                 
-                <tr>
-                    <td><label for="">Balance: </label></td>
-                    <td><input type="text" id="finalbalance" style="border: none;"></td>
-                </tr>
-                <tr>
-                    <td colspan="2"> <button onclick="balance()">Balance Check</button></td>
-                </tr>
-            </table>
+                </ul>
+            </div>
+            <div class="benefits">
+                <h3>Benefits</h3>
+                <ul>
+                    <li>Convenience: Bank from anywhere, anytime</li>
+                    <li>Security: State-of-the-art encryption and security measures</li>
+                    <li>Time-saving: Quickly and easily manage your accounts</li>
+                    <li>Environmentally friendly: Reduce paper waste with digital statements</li>
+                </ul>
+            </div>
         </div>
     </section>
-   
+    
+
+
+
 </body>
-<script src="./withdraw.js"></script>
 </html>
