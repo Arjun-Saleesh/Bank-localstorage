@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: wheat;
+          
+        }
+        .container{
+            width: 600px;
+            position: absolute;
+            left: 28%;
+            right: 25%;
+            top: 25%;
+            
+            
+
+            
+            
+            
+            
+        }
+        img{
+            width: 350px;
+            height: 350px;
+            
+        }
+        .row{
+            display: flex;
+            /* justify-content: space-around;  */
+            background-color: white;
+
+        }
+        input{
+            width: 190px;
+            padding: 4px;
+        }
+        button{
+            padding: 5px;
+            width: 200px;
+            background-color: green;
+            border: none;
+            border-radius: 10px;
+
+        }
+        .col2{
+            margin-top: 80px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col-4">
+                <img src="https://managementweekly.org/wp-content/uploads/2021/04/header.jpg" alt="">
+            </div>
+            <div class="col2">
+                <table>
+                    <tr>
+                        <td>Account Number</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  id="accno"></td>
+                    </tr>
+                    <tr>
+                        <td>User Name</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  id="uname"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  id="passw"></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="submit()">Submit</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./bank.js"></script>
+</html>

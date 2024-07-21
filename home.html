@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    body{
+        background-image: url('https://www.civista.bank/assets/img/olb-background.png');
+        background-size: 100% ;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 0px;
+            padding: 0px;
+            margin: 0px;
+    }
+    .navimg img{
+        width: 50px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+
+
+    }
+    .bankname{
+        position: relative;
+    }
+    .navlist{
+        position: relative;
+        margin-left: 1000px;
+        
+    }
+    .nav-btn {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 5px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.nav-btn:hover {
+    background-color: #23527c;
+}
+
+    .online-banking {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.online-banking h2 {
+    color: #333;
+}
+
+.online-banking p {
+    margin-bottom: 20px;
+}
+
+.online-banking button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.online-banking button:hover {
+    background-color: #23527c;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.features h3 {
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.benefits {
+    margin-top: 20px;
+}
+
+.benefits h3 {
+    margin-bottom: 10px;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: none;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .navlist {
+        margin-left: 0;
+    }
+    .nav-btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .online-banking {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .online-banking img {
+        height: 200px;
+    }
+    .features ul, .benefits ul {
+        padding-left: 20px;
+    }
+}
+
+  
+</style>
+<body>
+    <nav>
+        <div class="navimg">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/348/687/original/bank-vector-icon.jpg" alt="">
+            
+        </div>
+        <div class="bankname">
+            <h3>BANK</h3>
+        </div>
+        <div class="navlist">
+            <a href="./home.html"><button class="nav-btn">HOME</button></a>
+            <a href="./register.html"><button class="nav-btn">REGISTER</button></a>
+        </div>
+    </nav>
+    <section>
+        <div class="online-banking">
+            <h2>Experience the Power of Online Banking</h2>
+            <p>Manage your accounts, pay bills, transfer funds, and more with our secure and user-friendly online banking system.</p>
+            <img src="https://globebankonline.com/wp-content/uploads/2020/04/AdobeStock_205999626-2048x1150.jpeg" alt="Online Banking" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
+            <button onclick="window.location.href='./login.html'">Login to Online Banking</button>
+            <div class="features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>View account balances </li>
+                    
+                
+                </ul>
+            </div>
+            <div class="benefits">
+                <h3>Benefits</h3>
+                <ul>
+                    <li>Convenience: Bank from anywhere, anytime</li>
+                    <li>Security: State-of-the-art encryption and security measures</li>
+                    <li>Time-saving: Quickly and easily manage your accounts</li>
+                    <li>Environmentally friendly: Reduce paper waste with digital statements</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+</body>
+</html>
